@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ID_estudante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqm-eQ-cYo">
+                                <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escanear QR Code" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-9F-lOS">
+                                        <rect key="frame" x="78" y="35" width="144" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-hi-x72" userLabel="camera_btn">
+                                        <rect key="frame" x="115" y="115" width="70" height="70"/>
+                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="en0-Xa-ZCG"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="fB4-sp-W2n"/>
+                                            <constraint firstAttribute="width" constant="70" id="hZl-hn-A2c"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="yYo-4X-HXb"/>
+                                        </constraints>
+                                        <state key="normal" image="camera"/>
+                                        <connections>
+                                            <action selector="openCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWA-TD-30C"/>
+                                            <segue destination="sA5-RP-Mbb" kind="show" animates="NO" id="IAX-qB-A9Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="R2u-hi-x72" firstAttribute="centerX" secondItem="cqm-eQ-cYo" secondAttribute="centerX" id="GBh-5f-rJb"/>
+                                    <constraint firstAttribute="height" constant="300" id="OOQ-MW-COl"/>
+                                    <constraint firstItem="R2u-hi-x72" firstAttribute="centerY" secondItem="cqm-eQ-cYo" secondAttribute="centerY" id="etu-xt-b5o"/>
+                                    <constraint firstItem="OmU-9F-lOS" firstAttribute="top" secondItem="cqm-eQ-cYo" secondAttribute="top" constant="35" id="hZD-Yh-FTY"/>
+                                    <constraint firstAttribute="width" constant="300" id="pNV-5M-l5u"/>
+                                    <constraint firstItem="OmU-9F-lOS" firstAttribute="centerX" secondItem="cqm-eQ-cYo" secondAttribute="centerX" id="ukx-Ws-PDt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cqm-eQ-cYo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1xC-nS-sNk"/>
+                            <constraint firstItem="cqm-eQ-cYo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BQa-I6-hFf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="camera_btn" destination="R2u-hi-x72" id="RYT-A8-Phh"/>
+                        <segue destination="sA5-RP-Mbb" kind="show" identifier="main" id="H9J-A3-9qs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="vSd-dW-tLd">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAp-jd-XNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="sA5-RP-Mbb" customClass="QRScannerViewController" customModule="ID_estudante" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8Y-Pn-RCe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBi-Dc-9MN" customClass="QRScannerView" customModule="ID_estudante" customModuleProvider="target">
+                                <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="FZR-16-a23"/>
+                                    <constraint firstAttribute="width" constant="300" id="YP4-a5-870"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XBi-Dc-9MN" firstAttribute="centerY" secondItem="o8Y-Pn-RCe" secondAttribute="centerY" id="6Ps-3h-DOj"/>
+                            <constraint firstItem="XBi-Dc-9MN" firstAttribute="centerX" secondItem="o8Y-Pn-RCe" secondAttribute="centerX" id="dms-ln-rHq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FJf-z1-0pp"/>
+                    </view>
+                    <connections>
+                        <outlet property="scannerView" destination="XBi-Dc-9MN" id="bAd-ic-KMc"/>
+                        <segue destination="Qbo-re-wjd" kind="show" identifier="detailSegue" id="dvC-Uc-No7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="977" y="18"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="BWI-ta-fBL">
+            <objects>
+                <viewController id="Qbo-re-wjd" customClass="DetailViewController" customModule="ID_estudante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VNT-W6-LlM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7db-jW-slq">
+                                <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6Hj-YM-Fzw"/>
+                                    <constraint firstAttribute="width" constant="300" id="cUx-3m-EQR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="detailLabel" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BV8-Gw-dJr">
+                                <rect key="frame" x="166.66666666666666" y="395.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BV8-Gw-dJr" firstAttribute="centerX" secondItem="VNT-W6-LlM" secondAttribute="centerX" id="BCs-5b-kLB"/>
+                            <constraint firstItem="7db-jW-slq" firstAttribute="centerY" secondItem="VNT-W6-LlM" secondAttribute="centerY" id="La9-CN-Y8a"/>
+                            <constraint firstItem="7db-jW-slq" firstAttribute="centerX" secondItem="VNT-W6-LlM" secondAttribute="centerX" id="jYg-eH-8td"/>
+                            <constraint firstItem="BV8-Gw-dJr" firstAttribute="centerY" secondItem="VNT-W6-LlM" secondAttribute="centerY" id="qcG-M3-DAJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CsZ-fY-A3r"/>
+                    </view>
+                    <connections>
+                        <outlet property="detail_lb" destination="BV8-Gw-dJr" id="sN7-0X-KTF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pO-Pk-25A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949.5999999999999" y="17.733990147783253"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="IAX-qB-A9Y"/>
+    </inferredMetricsTieBreakers>
+</document>
