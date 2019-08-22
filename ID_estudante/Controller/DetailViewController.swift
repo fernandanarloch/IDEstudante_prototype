@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var detail_lb: UILabel!
+    @IBOutlet weak var tabbar: UITabBarItem!
     
     var qrData: QRData?
     
