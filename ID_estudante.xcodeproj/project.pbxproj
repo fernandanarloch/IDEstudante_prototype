@@ -18,6 +18,7 @@
 		42452BC9230B066C0020BCCA /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42452BC8230B066C0020BCCA /* QRScannerView.swift */; };
 		42452BCC230B07E90020BCCA /* QRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42452BCB230B07E90020BCCA /* QRData.swift */; };
 		42452BCE230B10FC0020BCCA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42452BCD230B10FC0020BCCA /* DetailViewController.swift */; };
+		429BAD05230DC7320031ED19 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BAD04230DC7320031ED19 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		42452BC8230B066C0020BCCA /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		42452BCB230B07E90020BCCA /* QRData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRData.swift; sourceTree = "<group>"; };
 		42452BCD230B10FC0020BCCA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		429BAD04230DC7320031ED19 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				42452BC2230B05260020BCCA /* QRScannerViewController.swift */,
 				422522042306E9A800B66C5B /* ViewController.swift */,
 				42452BCD230B10FC0020BCCA /* DetailViewController.swift */,
+				429BAD04230DC7320031ED19 /* InfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				422522052306E9A800B66C5B /* ViewController.swift in Sources */,
 				422522032306E9A800B66C5B /* AppDelegate.swift in Sources */,
 				42452BC9230B066C0020BCCA /* QRScannerView.swift in Sources */,
+				429BAD05230DC7320031ED19 /* InfoViewController.swift in Sources */,
 				42452BCE230B10FC0020BCCA /* DetailViewController.swift in Sources */,
 				42452BC3230B05260020BCCA /* QRScannerViewController.swift in Sources */,
 				42452BCC230B07E90020BCCA /* QRData.swift in Sources */,

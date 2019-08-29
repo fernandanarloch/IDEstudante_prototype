@@ -10,12 +10,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var detail_lb: UILabel!
+    @IBOutlet weak var name_lb: UILabel!
+    @IBOutlet weak var tabbar: UITabBarItem!
     
     var qrData: QRData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        detail_lb.text = qrData?.codeString
+        name_lb.text = qrData?.codeString
     }
 }
