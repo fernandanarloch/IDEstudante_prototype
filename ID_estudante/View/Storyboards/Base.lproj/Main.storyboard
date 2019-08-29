@@ -268,6 +268,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="U3P-lV-Yf2"/>
                     <connections>
+                        <outlet property="cpf_lb" destination="oHT-3R-EQ3" id="Q93-sW-aNH"/>
+                        <outlet property="matricula_lb" destination="fSx-fo-8AJ" id="RQQ-jt-Akv"/>
                         <outlet property="name_lb" destination="NQP-s7-7ve" id="gRI-WZ-mVH"/>
                         <outlet property="tabbar" destination="U3P-lV-Yf2" id="6OS-oM-Vjn"/>
                     </connections>
@@ -305,7 +307,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeY-Dj-RoE">
-                                <rect key="frame" x="0.0" y="88" width="414" height="705"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="749"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0X-v1-FDP">
                                         <rect key="frame" x="153" y="35" width="108" height="24"/>
